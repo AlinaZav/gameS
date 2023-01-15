@@ -1,0 +1,276 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background-image: url(img/offer_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1024px;
+}
+
+.offer {
+  color: #fff;
+  padding-top: 217px;
+}
+
+.offer_title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  padding-bottom: 32px;
+}
+
+.offer_subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  padding-bottom: 44px;
+}
+
+.offer_subtitle__span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  background: #9C0332;
+  border-radius: 30px;
+  border: none;
+  width: 234px;
+  height: 48px;
+  cursor: pointer;
+  -webkit-transition: all;
+  transition: all;
+}
+
+.button:hover {
+  opacity: 0.5;
+}
+
+.br_mobile {
+  display: none;
+}
+
+.games {
+  background-color: #000915;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  padding-bottom: 128px;
+  padding-top: 128px;
+  gap: 32px;
+}
+
+.game {
+  grid-column: span 4;
+  width: 378px;
+  height: 300px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-left: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 32px;
+}
+
+.game_link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.game_link:hover {
+  text-decoration: underline;
+}
+
+.game_one {
+  background-image: url(img/game1.png);
+}
+
+.game_two {
+  background-image: url(img/game2.png);
+}
+
+.game_three {
+  background-image: url(img/game3.png);
+}
+
+.seasons {
+  background-color: #000915;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+}
+
+.seasons_offer {
+  color: #fff;
+  padding-top: 282px;
+  padding-bottom: 282px;
+}
+
+.seasons_title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.seasons_subtitle {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+picture {
+  padding-top: 233px;
+  padding-bottom: 233px;
+}
+
+.endGame {
+  background-image: url(img/gameEnd.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.offer_end {
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 276px;
+}
+
+.end_subtitle {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.footer {
+  background-color: #000915;
+  height: 80px;
+  border-top: 1px solid rgba(184, 212, 255, 0.2);
+}
+
+.footer_title {
+  color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    background-image: url(img/bg_mobile.png);
+  }
+  .offer {
+    padding-top: 238px;
+    text-align: center;
+  }
+  .offer_title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .offer_subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 32px;
+  }
+  .offer_subtitle__span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .br_style {
+    display: none;
+  }
+  .game {
+    width: 343px;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .game_one {
+    background-image: url(img/game1_mobile.png);
+  }
+  .game_two {
+    background-image: url(img/game2_mobile.png);
+  }
+  .game_three {
+    background-image: url(img/game3_mobile.png);
+  }
+  .seasons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 0;
+  }
+  .seasons_offer {
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 64px;
+  }
+  .seasons_title {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons_subtitle {
+    font-size: 14px;
+  }
+  picture {
+    padding-top: 0;
+    padding-bottom: 85px;
+  }
+  .world {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .endGame {
+    background-image: url(img/gameEndmobile.png);
+  }
+  .end_subtitle {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .footer {
+    border: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

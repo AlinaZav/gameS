@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header center">
+        <div class="offer">
+            <h1 class="offer_title">Добро пожаловать <br> на мой сайт !</h1>
+            <p class="offer_subtitle">Вам предстоит пройти несколько <br class="br_mobile"> увлекательных <br
+                    class="br_style"> игр. Если готов нажимай <br class="br_mobile">
+                <span class="offer_subtitle__span">поехали</span> и <span class="offer_subtitle__span">приступай</span>
+            </p>
+            <button class="offer_button button">Поехали!</button>
+        </div>
+    </header>
+
+    <section class="games center">
+        <div class="game game_one">
+            <a href="#game1" class="game_link">Игра 1</a>
+        </div>
+        <div class="game game_two">
+            <a href="#game" class="game_link">Игра 2</a>
+        </div>
+        <div class="game game_three">
+            <a href="#gameEnd" class="game_link">Игра 3</a>
+        </div>
+    </section>
+    <section id="game1" class="seasons center">
+        <div class="seasons_offer">
+            <h1 class="seasons_title">
+                Времена года!
+            </h1>
+            <p class="seasons_subtitle">
+                Нажмите кнопку играть, введите номер <br class="br_mobile"> месяца (от 1 до 12) и <br class="br_style">
+                вы узнаете к какому <br class="br_mobile">
+                времени года он
+                относится
+            </p>
+            <button onclick="game1()" class="button">Играть!</button>
+        </div>
+        <picture>
+            <source media="(min-width: 1024px )" srcset="img/style.png">
+            <source media="(max-width:767px )" srcset="img/mobile.png">
+            <img src="style.png" alt="game">
+        </picture>
+    </section>
+    <section id="game" class="seasons center world">
+        <picture>
+            <source media="(min-width: 1024px )" srcset="img/style_world.png">
+            <source media="(max-width:767px )" srcset="img/mobile_world.png">
+            <img src="img/style_world.png" alt="game">
+        </picture>
+        <div class="seasons_offer world_offer">
+            <h1 class="seasons_title world_title">
+                Запомни слова
+            </h1>
+            <p class="seasons_subtitle world_subtitle">
+                При нажатии на кнопку играть, вы увидите <br class="br_mobile"> несколько слов, <br class="br_style">
+                которые вам необходимо <br class="br_mobile">
+                запомнить.
+            </p>
+            <button onclick="game2()" class="button">Играть!</button>
+        </div>
+
+    </section>
+    <section id="gameEnd" class="center endGame">
+        <div class="offer_end">
+            <h1 class="seasons_title ">
+                Игра в загадки </h1>
+            <p class="end_subtitle ">
+                Компьютер загадывает загадку, вам <br class="br_mobile"> необходимо ее угадать, если вы дадите не <br
+                    class="br_mobile"> правильный ответ, то компьютер
+                даст вам <br class="br_style br_mobile"> подсказку. У вас будет три попытки и две <br class="br_mobile">
+                подсказки.
+            </p>
+            <button onclick="game3()" class="button">Играть!</button>
+        </div>
+    </section>
+    <footer class="center footer">
+        <h1 class="footer_title">
+            Все права защищены
+        </h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
